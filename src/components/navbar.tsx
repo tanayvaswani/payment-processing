@@ -1,9 +1,9 @@
 import { BellDot, CircleHelp, CodeXml, Settings } from "lucide-react";
+import Image from "next/image";
 
 import { Button } from "./ui/button";
 
 import OrganizationToggler from "./org-toggler";
-import Image from "next/image";
 
 const userNavigations = [
   {
