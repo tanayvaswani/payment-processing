@@ -1,6 +1,20 @@
 "use client";
 
-import { Loader, LogOut, Phone } from "lucide-react";
+import {
+  Building2,
+  ChartNoAxesColumn,
+  CircleDollarSign,
+  CreditCard,
+  HeartHandshake,
+  Layers,
+  LayoutDashboard,
+  Loader,
+  Receipt,
+  Send,
+  Slack,
+  UserRound,
+  Users,
+} from "lucide-react";
 
 import SidebarItem from "./sidebar-item";
 import { Separator } from "../ui/separator";
@@ -15,17 +29,17 @@ export const firstGroup = [
 
 export const secondGroup = [
   {
-    icon: Phone,
+    icon: LayoutDashboard,
     label: "Dashboard",
     href: "#",
   },
   {
-    icon: LogOut,
-    label: "Customer",
+    icon: UserRound,
+    label: "Customers",
     href: "#",
   },
   {
-    icon: Phone,
+    icon: Layers,
     label: "Products",
     href: "#",
   },
@@ -33,22 +47,22 @@ export const secondGroup = [
 
 export const thirdGroup = [
   {
-    icon: LogOut,
+    icon: CircleDollarSign,
     label: "Payments",
     href: "#",
   },
   {
-    icon: LogOut,
+    icon: CreditCard,
     label: "Funding",
     href: "#",
   },
   {
-    icon: LogOut,
+    icon: Receipt,
     label: "Invoices",
     href: "#",
   },
   {
-    icon: LogOut,
+    icon: ChartNoAxesColumn,
     label: "Reporting",
     href: "#",
   },
@@ -56,12 +70,12 @@ export const thirdGroup = [
 
 export const fourthGroup = [
   {
-    icon: LogOut,
+    icon: Building2,
     label: "Company",
     href: "#",
   },
   {
-    icon: LogOut,
+    icon: Users,
     label: "Team",
     href: "#",
   },
@@ -69,17 +83,17 @@ export const fourthGroup = [
 
 export const bottomGroup = [
   {
-    icon: LogOut,
+    icon: Send,
     label: "Share Feedback",
     href: "#",
   },
   {
-    icon: LogOut,
+    icon: Slack,
     label: "Join our Slack",
     href: "#",
   },
   {
-    icon: LogOut,
+    icon: HeartHandshake,
     label: "Support",
     href: "#",
   },
@@ -98,7 +112,7 @@ const SidebarRoutes = () => {
           />
         ))}
 
-        <Separator orientation="horizontal" className="my-1 bg-zinc-200/60" />
+        <Separator orientation="horizontal" className="my-1 bg-zinc-200/50" />
 
         {secondGroup.map((route, index) => (
           <SidebarItem
@@ -109,7 +123,7 @@ const SidebarRoutes = () => {
           />
         ))}
 
-        <Separator orientation="horizontal" className="my-1 bg-zinc-200/60" />
+        <Separator orientation="horizontal" className="my-1 bg-zinc-200/50" />
 
         {thirdGroup.map((route, index) => (
           <SidebarItem
@@ -120,7 +134,7 @@ const SidebarRoutes = () => {
           />
         ))}
 
-        <Separator orientation="horizontal" className="my-1 bg-zinc-200/60" />
+        <Separator orientation="horizontal" className="my-1 bg-zinc-200/50" />
 
         {fourthGroup.map((route, index) => (
           <SidebarItem
