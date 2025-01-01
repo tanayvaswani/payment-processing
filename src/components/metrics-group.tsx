@@ -46,7 +46,7 @@ const metrics = [
 
 const MetircsGroup = () => {
   return (
-    <div className="relative w-full p-6 pb-12 border rounded-2xl bg-gradient-to-r from-[#E8FCDD] to-[#CFFED8] grid grid-cols-1 lg:grid-cols-4 items-center justify-center gap-4">
+    <div className="relative w-full p-6 pb-16 border rounded-2xl bg-gradient-to-r from-[#E8FCDD] to-[#CFFED8] grid grid-cols-1 lg:grid-cols-4 items-center justify-center gap-4">
       {metrics.map((metric, index) => (
         <Card key={index} className="rounded-xl">
           <CardHeader className="flex flex-row items-center justify-between w-full text-zinc-700">
@@ -71,8 +71,9 @@ const MetircsGroup = () => {
         </Card>
       ))}
 
-      <div className="hover:bg-white text-[#298219] hover:text-[#298219]/90 bg-white border border-b-white rounded-t-2xl absolute bottom-0 left-[50%] -translate-x-20 px-6 pt-2 flex items-center gap-2 translate-y-[1px] cursor-pointer">
-        All metrics <MoveRight className="h-4 w-4" />
+      <div className="group hover:bg-white text-[#298219] hover:text-[#298219]/90 bg-white border border-b-white rounded-t-2xl absolute bottom-0 left-[50%] -translate-x-20 px-6 pt-2 flex items-center gap-2 translate-y-[1px] cursor-pointer">
+        All metrics{" "}
+        <MoveRight className="h-4 w-4 group-hover:translate-x-1 transition-all duration-200" />
       </div>
     </div>
   );
