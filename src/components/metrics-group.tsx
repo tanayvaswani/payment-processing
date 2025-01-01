@@ -40,10 +40,10 @@ const metrics = [
 
 const MetircsGroup = () => {
   return (
-    <div className="w-full p-6 border rounded-xl bg-gradient-to-r from-[#E8FCDD] to-[#CFFED8] grid grid-cols-1 lg:grid-cols-4 items-center justify-center gap-6">
+    <div className="w-full p-6 border rounded-2xl bg-gradient-to-r from-[#E8FCDD] to-[#CFFED8] grid grid-cols-1 lg:grid-cols-4 items-center justify-center gap-4">
       {metrics.map((metric, index) => (
-        <Card key={index}>
-          <CardHeader className="flex flex-row items-center justify-between w-full text-zinc-700 pb-3">
+        <Card key={index} className="rounded-xl">
+          <CardHeader className="flex flex-row items-center justify-between w-full text-zinc-700">
             <CardTitle className="font-normal">{metric.title}</CardTitle>
 
             <div
@@ -56,8 +56,8 @@ const MetircsGroup = () => {
             </div>
           </CardHeader>
 
-          <CardContent className="">
-            <span className="text-zinc-950 font-medium font-mono text-2xl">
+          <CardContent className="text-zinc-700">
+            <span className="text-zinc-950 font-semibold font-mono text-2xl">
               {metric.number}
             </span>{" "}
             {metric.unit}

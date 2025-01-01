@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6">
       {/* Dashboard Header */}
-      <div className="flex items-center justify-between w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-3">
         <h1 className="font-semibold text-zinc-900 text-2xl">
           Welcome, Tanay!
         </h1>
