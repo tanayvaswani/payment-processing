@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { CalendarRange, ChevronDown, SlidersHorizontal } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
 
 const HomePage = () => {
   return (
