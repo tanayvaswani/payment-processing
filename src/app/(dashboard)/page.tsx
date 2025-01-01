@@ -2,6 +2,8 @@ import { CalendarRange, ChevronDown, SlidersHorizontal } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
+import MetircsGroup from "@/components/metrics-group";
+
 const HomePage = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6">
@@ -24,6 +26,9 @@ const HomePage = () => {
           </Button>
         </div>
       </div>
+
+      {/* Metrics Card Group */}
+      <MetircsGroup />
     </div>
   );
 };
