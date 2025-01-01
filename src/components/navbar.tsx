@@ -1,5 +1,8 @@
 import { ShieldQuestionIcon } from "lucide-react";
+
 import { Button } from "./ui/button";
+
+import OrganizationToggler from "./org-toggler";
 
 const userNavigations = [
   {
@@ -11,8 +14,8 @@ const userNavigations = [
 
 const Navbar = () => {
   return (
-    <div className="w-full fixed top-0 z-50 h-14 border-b flex items-center justify-between bg-white">
-      {/* <OrganizationToggler /> */}
+    <div className="w-full fixed top-0 z-50 h-14 border-b flex items-center justify-between bg-white px-3">
+      <OrganizationToggler />
 
       {/* Navigation Buttons */}
       <div className="flex items-center gap-3">
