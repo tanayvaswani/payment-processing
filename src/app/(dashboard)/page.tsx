@@ -35,10 +35,21 @@ const HomePage = () => {
             </DropdownMenuTrigger>
 
             <DropdownMenuContent className="min-w-[--radix-dropdown-menu-trigger-width]">
-              <DropdownMenuItem>This Hour</DropdownMenuItem>
-              <DropdownMenuItem>This Day</DropdownMenuItem>
-              <DropdownMenuItem>This Month</DropdownMenuItem>
-              <DropdownMenuItem>This Year</DropdownMenuItem>
+              <DropdownMenuItem>
+                <CalendarRange className="h-4 w-4" /> This Hour
+              </DropdownMenuItem>
+
+              <DropdownMenuItem>
+                <CalendarRange className="h-4 w-4" /> This Day
+              </DropdownMenuItem>
+
+              <DropdownMenuItem>
+                <CalendarRange className="h-4 w-4" /> This Month
+              </DropdownMenuItem>
+
+              <DropdownMenuItem>
+                <CalendarRange className="h-4 w-4" /> This Year
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
