@@ -1,6 +1,12 @@
 import { CalendarRange, ChevronDown, SlidersHorizontal } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 import MetircsGroup from "@/components/metrics-group";
 
@@ -19,11 +25,22 @@ const HomePage = () => {
             Customize home view
           </Button>
 
-          <Button variant={"outline"} className="rounded-lg">
-            <CalendarRange className="h-4 w-4" />
-            This week
-            <ChevronDown className="h-4 w-4" />
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant={"outline"} className="rounded-lg">
+                <CalendarRange className="h-4 w-4" />
+                This week
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+
+            <DropdownMenuContent className="min-w-[--radix-dropdown-menu-trigger-width]">
+              <DropdownMenuItem>This Hour</DropdownMenuItem>
+              <DropdownMenuItem>This Day</DropdownMenuItem>
+              <DropdownMenuItem>This Month</DropdownMenuItem>
+              <DropdownMenuItem>This Year</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
 
