@@ -47,7 +47,7 @@ const ChargesChart = () => {
         </CardTitle>
         <CardDescription className="text-base font-normal text-zinc-700">
           <span className="text-2xl font-mono font-semibold text-zinc-900">
-            2156{" "}
+            2156
           </span>
           count
         </CardDescription>
@@ -56,7 +56,7 @@ const ChargesChart = () => {
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3 text-sm px-6 py-2">
         <div className="flex items-center justify-center bg-zinc-300/50 text-zinc-500 rounded-full px-[1.5px] py-[1.5px]">
           <span className="font-mono flex items-center gap-1 bg-white rounded-full px-1.5">
-            <ArrowUpRight className="h-4 w-4 text-[#FF520E]" /> 15.56%
+            <ArrowUpRight className="h-4 w-4 text-[#1AA55D]" /> 15.56%
           </span>
           <span className="px-1.5"> vs. last week</span>
         </div>
@@ -97,7 +97,6 @@ const ChargesChart = () => {
               tickLine={false}
               axisLine={false}
               tickMargin={8}
-              tickFormatter={(value) => `$${value}`}
             />
             <ChartTooltip
               cursor={false}
