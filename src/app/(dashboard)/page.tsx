@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import ChargesChart from "@/components/charges-chart";
 import MetircsGroup from "@/components/metrics-group";
 import RevenueChart from "@/components/revenue-chart";
 import UserTable from "@/components/user-table";
@@ -63,8 +64,7 @@ const HomePage = () => {
       {/* Charts Group */}
       <div className="w-full grid grid-cols-1 gap-6 lg:grid-cols-2">
         <RevenueChart />
-        <RevenueChart />
-        {/* <ChargesChart /> */}
+        <ChargesChart />
       </div>
 
       <UserTable />
