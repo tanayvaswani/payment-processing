@@ -10,6 +10,7 @@ import {
 
 import MetircsGroup from "@/components/metrics-group";
 import RevenueChart from "@/components/revenue-chart";
+import UserTable from "@/components/user-table";
 
 const HomePage = () => {
   return (
@@ -65,6 +66,8 @@ const HomePage = () => {
         <RevenueChart />
         {/* <ChargesChart /> */}
       </div>
+
+      <UserTable />
     </div>
   );
 };
