@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import OrganizationToggler from "./org-toggler";
+import SidebarToggler from "./sidebar-toggler";
 
 const userNavigations = [
   {
@@ -45,7 +46,12 @@ const userNavigations = [
 const Navbar = () => {
   return (
     <div className="w-full fixed top-0 z-50 h-14 border-b flex items-center justify-between bg-white px-3">
-      <OrganizationToggler />
+      <div className="flex items-center gap-2">
+        <div className="md:hidden block">
+          <SidebarToggler />
+        </div>
+        <OrganizationToggler />
+      </div>
 
       {/* Navigation Buttons */}
       <div className="hidden md:flex items-center gap-2.5">
