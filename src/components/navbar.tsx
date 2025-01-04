@@ -45,7 +45,7 @@ const userNavigations = [
 
 const Navbar = () => {
   return (
-    <div className="w-full fixed top-0 z-50 h-14 border-b flex items-center justify-between bg-white px-3">
+    <div className="w-full fixed top-0 z-50 h-14 border-b border-zinc-200/50 flex items-center justify-between bg-white px-3">
       <div className="flex items-center gap-2">
         <div className="md:hidden block">
           <SidebarToggler />
