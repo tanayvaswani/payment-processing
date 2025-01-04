@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import MetircsGroup from "@/components/metrics-group";
+import RevenueChart from "@/components/revenue-chart";
 
 const HomePage = () => {
   return (
@@ -57,6 +58,13 @@ const HomePage = () => {
 
       {/* Metrics Card Group */}
       <MetircsGroup />
+
+      {/* Charts Group */}
+      <div className="w-full grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <RevenueChart />
+        <RevenueChart />
+        {/* <ChargesChart /> */}
+      </div>
     </div>
   );
 };
